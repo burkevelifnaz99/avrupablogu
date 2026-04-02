@@ -3,7 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fransa Yemek</title>
+<title>Fransa Yemek</title> <style>
+
+/* GENEL AYAR */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#111;
+    padding:15px 0;
+}
+
+.navbar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#f39c12;
+}
+
+/* SAYFA ALANI */
+.section{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* KART TASARIMI */
+.detay{
+    background:white;
+    width:70%;
+    margin:25px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.detay:hover{
+    transform:scale(1.02);
+}
+
+/* FOTOĞRAF */
+.detay-foto{
+    width:100%;
+    max-width:700px;
+    border-radius:10px;
+}
+
+/* YAZI */
+.detay p{
+    font-size:18px;
+    margin-top:15px;
+    color:#333;
+}
+
+/* MOBİL UYUMLU */
+@media(max-width:768px){
+    .detay{
+        width:90%;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+</style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,17 +109,34 @@
 
   <div class="detay">
     <img class="detay-foto" src="fryemek1.jpg">
-    <p>Kruvasan ve baget ekmek Fransız mutfağının simgesidir.</p>
+    <p>Kruvasan ve baget ekmek Fransız mutfağının simgesidir.Kruvasan ve baget ekmek, Fransız mutfağının 
+        en tanınmış ve simgesel lezzetlerindendir. Taze fırınlanmış kruvasan, kat kat yapısı ve tereyağlı 
+        aromasıyla kahvaltıların vazgeçilmezi olurken, uzun ve çıtır baget ekmekler, peynir, şarküteri ve yemeklerle 
+        birlikte sofralara eşlik eder. Fransa’da fırınlar sabahın erken saatlerinden itibaren bu lezzetleri sunar
+         ve günlük yaşamın bir parçası hâline getirir. Hem yerel halk hem de turistler için kruvasan ve baget, sadece yemek değil, 
+        Fransız kültürünü deneyimlemenin küçük ama anlamlı bir yolu olarak öne çıkar</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="fryemek2.jpg">
-    <p>Peynir çeşitleri Fransa mutfağının önemli bir parçasıdır.</p>
+    <p>Peynir çeşitleri Fransa mutfağının önemli bir parçasıdır.
+        Peynir çeşitleri, Fransız mutfağının en önemli ve zengin parçalarından biridir.
+         Camembert, Brie, Roquefort ve Comté gibi ünlü peynirler, farklı 
+         bölgelerin karakteristik tatlarını yansıtır. Peynirler genellikle yemeklerin yanında, 
+         şarapla eşleştirilerek veya tatlılarla birlikte sunulur. Fransa’da peynir, sadece bir yiyecek değil,
+          aynı zamanda kültürel bir deneyimdir; her peynirin kendine özgü yapım süreci, aroması ve servis önerisi vardır. 
+        Bu çeşitlilik, Fransız mutfağını hem lezzet hem de gastronomik açıdan keşfetmeyi unutulmaz kılar.</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="fryemek3.jpg">
-    <p>Şarap kültürü dünya çapında ünlüdür.</p>
+    <p>Şarap kültürü dünya çapında ünlüdür.Fransa’nın şarap kültürü, dünya çapında ün kazanmış
+         ve ülkenin gastronomik mirasının ayrılmaz bir parçasıdır. Bordeaux, Burgundy ve Champagne gibi bölgeler, 
+         ünlü üzüm bağları ve prestijli şaraplarıyla bilinir. Şarap yapımı, yıllar süren deneyim,
+         titiz üretim süreçleri ve bölgesel özelliklerin birleşimiyle ortaya çıkar. Tadım etkinlikleri, 
+         bağ turu ve şarap fabrikası ziyaretleri, hem şarap severler hem de kültürel deneyim arayanlar için unutulmaz fırsatlar sunar.
+          Bu kültür, Fransa’yı sadece bir tat destinasyonu değil,
+         aynı zamanda zengin bir tarih ve gelenek deneyimi sunan bir ülke hâline getirir</p>
   </div>
 
 </section>

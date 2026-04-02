@@ -3,7 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fransa Turizm</title>
+<title>Fransa Turizm</title><style>
+
+/* GENEL AYAR */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#111;
+    padding:15px 0;
+}
+
+.navbar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#f39c12;
+}
+
+/* SAYFA ALANI */
+.section{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* KART TASARIMI */
+.detay{
+    background:white;
+    width:70%;
+    margin:25px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.detay:hover{
+    transform:scale(1.02);
+}
+
+/* FOTOĞRAF */
+.detay-foto{
+    width:100%;
+    max-width:700px;
+    border-radius:10px;
+}
+
+/* YAZI */
+.detay p{
+    font-size:18px;
+    margin-top:15px;
+    color:#333;
+}
+
+/* MOBİL UYUMLU */
+@media(max-width:768px){
+    .detay{
+        width:90%;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+</style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,17 +109,35 @@
 
   <div class="detay">
     <img class="detay-foto" src="Eiffel Tower under the moon.jpg">
-    <p>Paris, dünyanın en çok ziyaret edilen şehirlerinden biridir.</p>
+    <p>Paris, dünyanın en çok ziyaret edilen şehirlerinden biridir.Paris, dünya çapında turizm ve kültürün merkezi olarak, 
+        dünyanın en çok ziyaret edilen şehirlerinden biridir. Tarihi yapıları, müzeleri ve ikonik simgeleriyle her yıl
+         milyonlarca turist çeker. Eyfel Kulesi’nin panoramik manzaraları, Louvre’un sanat hazineleri ve Seine Nehri boyunca 
+         yapılan keyifli yürüyüşler, şehri sadece görsel olarak değil, deneyim açısından da unutulmaz kılar. 
+         Ayrıca Paris’in kafeleri, sokakları ve pazarları, şehrin günlük yaşamını ve kültürel zenginliğini yakından
+          hissetme imkânı sunar.
+         Bu çeşitlilik, Paris’i hem tarih hem de modern yaşamla iç içe keşfedilebilecek bir destinasyon hâline getirir.</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="frturizm1.jpg">
-    <p>Nice ve Cannes sahilleri yaz turizmi için idealdir.</p>
+    <p>Nice ve Cannes sahilleri yaz turizmi için idealdir.Nice ve Cannes sahilleri, yaz turizmi için idealdir 
+        ve Akdeniz’in masmavi suları ile altın rengi kumsallarıyla ziyaretçilerini cezbeder. Güneşlenmek, denize 
+        girmek veya su sporları yapmak isteyenler için mükemmel ortam sunan bu sahiller, aynı zamanda sahil boyunca 
+        sıralanan kafeler, restoranlar ve butiklerle keyifli bir sosyal deneyim de sağlar. Cannes Film Festivali gibi 
+        kültürel etkinlikler, bölgeyi sadece doğal güzellikleriyle değil, aynı zamanda sanatsal ve sosyal yaşamıyla da 
+        öne çıkarır. Sahil yürüyüşleri, gün batımı
+         manzaraları ve canlı atmosferi ile Nice ve Cannes, yaz tatillerinde unutulmaz anılar biriktirmek için 
+         ideal destinasyonlardır.</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="frturizm2.jpg">
-    <p>Loire Vadisi tarihi şatolarıyla ünlüdür.</p>
+    <p>Loire Vadisi tarihi şatolarıyla ünlüdür.Loire Vadisi, tarihi şatolarıyla ünlü bir bölgedir ve Fransa’nın kültürel
+         mirasını keşfetmek isteyenler için eşsiz bir destinasyondur. Vadideki şatolar, Orta Çağ’dan Rönesans’a
+          kadar farklı dönemlerin mimari özelliklerini yansıtır. Chambord, Chenonceau ve Amboise gibi ünlü yapılar, zarif taş işçiliği,
+           geniş bahçeleri ve ihtişamlı iç dekorasyonlarıyla ziyaretçileri büyüler. Loire Nehri boyunca yapılan turlar
+            ve bisiklet yolları, şatoları doğayla iç içe keşfetmeye olanak sağlar.
+        Bölge, sadece tarih meraklıları için değil, fotoğraf ve doğa tutkunları için de unutulmaz bir deneyim sunar</p>
   </div>
 
 </section>

@@ -4,6 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>İspanya Turizm</title>
+<style>
+
+/* GENEL AYAR */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#111;
+    padding:15px 0;
+}
+
+.navbar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#f39c12;
+}
+
+/* SAYFA ALANI */
+.section{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* KART TASARIMI */
+.detay{
+    background:white;
+    width:70%;
+    margin:25px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.detay:hover{
+    transform:scale(1.02);
+}
+
+/* FOTOĞRAF */
+.detay-foto{
+    width:100%;
+    max-width:700px;
+    border-radius:10px;
+}
+
+/* YAZI */
+.detay p{
+    font-size:18px;
+    margin-top:15px;
+    color:#333;
+}
+
+/* MOBİL UYUMLU */
+@media(max-width:768px){
+    .detay{
+        width:90%;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+</style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,15 +111,27 @@
   <h2>İspanya Turizm</h2>
   <div class="detay">
     <img class="detay-foto" src="esturzim1.jpg" alt="Turizm 1">
-    <p>Barselona plajları ve sahil aktiviteleri.</p>
+    <p>Barselona plajları ve sahil aktiviteleri.Barselona plajları ve sahil aktiviteleri, şehrin enerjik ve hareketli yaşam 
+      tarzını en iyi yansıtan alanlardan biridir. Akdeniz’in sıcak sularında yüzme, sahil boyunca yürüyüş yapma, bisiklet sürme 
+      ve plaj voleybolu gibi aktiviteler hem yerel halk hem de turistler için vazgeçilmezdir. 
+      Gündüzleri güneşin ve denizin tadı çıkarılırken, akşam saatlerinde sahil hattı sosyal yaşamın merkezi haline gelir.</p>
   </div>
   <div class="detay">
     <img class="detay-foto" src="esturzim2.jpg" alt="Turizm 2">
-    <p>Madrid’de kültür turizmi ve müzeler.</p>
+    <p>Madrid’de kültür turizmi ve müzeler.Madrid’de kültür turizmi ve müzeler, şehrin tarihini 
+      ve sanat mirasını keşfetmek isteyen ziyaretçiler için büyük bir zenginlik sunar. Dünyaca ünlü sanat galerileri, klasik 
+      ve modern eserleri bir araya getirirken; müzeler İspanya’nın siyasi, sanatsal ve toplumsal geçmişini ayrıntılı biçimde
+       yansıtır. Şehirde yapılan kültür gezileri, sanatla iç içe 
+      bir deneyim sunarak Madrid’i Avrupa’nın önemli kültür merkezlerinden biri haline getirir.</p>
   </div>
   <div class="detay">
     <img class="detay-foto" src="esturzim3.jpg" alt="Turizm 3">
-    <p>Endülüs’te doğa ve tarih turları.</p>
+    <p>Endülüs’te doğa ve tarih turları.Endülüs’te doğa ve tarih turları, bölgenin eşsiz manzaralarını
+       ve zengin kültürel mirasını keşfetmek için mükemmel bir fırsat sunar. Sierra Nevada dağlarının nefes kesen
+        yürüyüş rotaları, El Torcal’in ilginç kaya oluşumları ve Doñana Ulusal Parkı’ndaki kuş gözlemleri doğa tutkunlarını cezbeder.
+         Tarih meraklıları için ise Córdoba’daki Mezquita, Granada’daki Alhambra ve Sevilla’daki Alcázar gibi İslam ve Hristiyan 
+         etkilerini bir arada görebileceğiniz tarihi yapılar unutulmaz deneyimler sunar.
+       Bu turlar, hem doğal güzellikleri hem de Endülüs’ün tarihini bir arada yaşamanızı sağlar.</p>
   </div>
 </section>
 

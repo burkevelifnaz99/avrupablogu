@@ -4,6 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fransa Mimarî</title>
+<style>
+
+/* GENEL AYAR */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#111;
+    padding:15px 0;
+}
+
+.navbar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#f39c12;
+}
+
+/* SAYFA ALANI */
+.section{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* KART TASARIMI */
+.detay{
+    background:white;
+    width:70%;
+    margin:25px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.detay:hover{
+    transform:scale(1.02);
+}
+
+/* FOTOĞRAF */
+.detay-foto{
+    width:100%;
+    max-width:700px;
+    border-radius:10px;
+}
+
+/* YAZI */
+.detay p{
+    font-size:18px;
+    margin-top:15px;
+    color:#333;
+}
+
+/* MOBİL UYUMLU */
+@media(max-width:768px){
+    .detay{
+        width:90%;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+</style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,17 +110,39 @@
 
   <div class="detay">
     <img class="detay-foto" src="eyfel.jpg">
-    <p>Eyfel Kulesi, modern mimarinin en önemli simgelerinden biridir.</p>
+    <p>Eyfel Kulesi, modern mimarinin en önemli simgelerinden biridir.Eyfel Kulesi, modern mimarinin en önemli
+       simgelerinden biridir ve Paris’in en tanınmış simgelerinden biri olarak dünya çapında bilinir. 
+       1889’da, Fransız mühendis Gustave Eiffel’in liderliğinde inşa edilen bu devasa demir yapı, başlangıçta birçok
+        kişi tarafından alışılmadık ve tartışmalı bulunmuş olsa da zamanla Paris’in ve modern mühendisliğin ikonik simgesi
+         hâline gelmiştir. 324 metre yüksekliğiyle şehre panoramik bir bakış sunan kule, ziyaretçilere farklı seviyelerde 
+         gözlem noktaları ve restoranlar aracılığıyla eşsiz bir deneyim sağlar. Gündüzleri şehrin tarihi ve modern dokusunu
+          bir arada görme fırsatı sunarken, gece ışıklandırmalarıyla romantik ve büyüleyici bir atmosfer yaratır. Eyfel Kulesi, sadece bir turistik yapı değil, aynı zamanda
+       mühendislik dehasının ve yaratıcı tasarımın bir sembolü olarak Paris’in kalbinde yükselmeye devam eder.</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="frmimari2.jpg">
-    <p>Gotik katedraller Fransa'nın mimari zenginliğini gösterir.</p>
+    <p>Gotik katedraller Fransa'nın mimari zenginliğini gösterir.Gotik katedraller, 
+      Fransa’nın mimari zenginliğini ve Ortaçağ estetiğini gözler önüne serer.
+       Yüksek sivri kemerleri, uçan payandaları ve vitray pencereleriyle bu yapılar,
+        hem dini hem de kültürel birer simge olarak öne çıkar. Notre-Dame de Paris gibi ünlü örnekler, taş işçiliği,
+         heykeller ve detaylı süslemeleriyle ziyaretçilerini büyüler. İç mekanlarda yükselen devasa sütunlar ve ışığı 
+         yumuşak bir şekilde süzen vitraylar, Gotik mimarinin dramatik ve etkileyici atmosferini hissettirir. 
+         Fransa’nın farklı bölgelerinde, katedral ve bazilikalar, sadece ibadet yerleri değil, aynı zamanda tarih 
+         ve sanatın birer canlı tanığıdır.
+       Bu yapılar, ziyaretçilere mimarinin, sanatın ve tarihin iç içe geçtiği unutulmaz bir deneyim sunar.</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="frmimari3.jpg">
-    <p>Versailles Sarayı ihtişamlı mimarinin en büyük örneklerindendir.</p>
+    <p>Versailles Sarayı ihtişamlı mimarinin en büyük örneklerindendir.Versailles Sarayı, ihtişamlı 
+        mimarinin ve Fransız kraliyet görkeminin en büyük örneklerinden biridir. 17. yüzyılda XIV. 
+        Louis tarafından yaptırılan saray, simetrik düzeni, zarif sütunları ve görkemli salonlarıyla dikkat çeker. 
+        Aynalar Salonu, kraliyet törenlerinin yapıldığı alanlar ve detaylı süslemeler, sarayın ne kadar özenle 
+        tasarlandığını gösterir. Sarayın çevresindeki geniş bahçeler, düzenli heykeller ve fıskiyeler, mimarinin doğayla 
+        bütünleşmesini sağlar ve ziyaretçilere hem görsel bir şölen hem de huzurlu bir yürüyüş deneyimi sunar.
+         Versailles, sadece bir saray değil; aynı zamanda Fransız sanatının, mühendisliğinin ve kraliyet
+          tarihinin canlı bir sembolüdür.</p>
   </div>
 
 </section>

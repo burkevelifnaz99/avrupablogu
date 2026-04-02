@@ -4,6 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>İtalya Turizm</title>
+<style>
+
+/* GENEL AYAR */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#111;
+    padding:15px 0;
+}
+
+.navbar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#f39c12;
+}
+
+/* SAYFA ALANI */
+.section{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* KART TASARIMI */
+.detay{
+    background:white;
+    width:70%;
+    margin:25px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.detay:hover{
+    transform:scale(1.02);
+}
+
+/* FOTOĞRAF */
+.detay-foto{
+    width:100%;
+    max-width:700px;
+    border-radius:10px;
+}
+
+/* YAZI */
+.detay p{
+    font-size:18px;
+    margin-top:15px;
+    color:#333;
+}
+
+/* MOBİL UYUMLU */
+@media(max-width:768px){
+    .detay{
+        width:90%;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+</style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,17 +110,35 @@
 
   <div class="detay">
     <img class="detay-foto" src="italyatur1.jpg">
-    <p>Roma, tarihi yapılarıyla turistlerin en çok ziyaret ettiği şehirlerden biridir.</p>
+    <p>Roma, tarihi yapılarıyla turistlerin en çok ziyaret ettiği şehirlerden biridir.
+        Roma, tarihi yapıları ve zengin kültürel mirasıyla turistlerin en çok ziyaret 
+        ettiği şehirlerden biridir. Kolezyum, Pantheon ve Roma Forumu gibi antik yapılar, ziyaretçilere 
+        Roma İmparatorluğu’nun görkemini ve yaşam biçimini yakından gösterir. Şehir sokakları, çeşmeler ve meydanlar, 
+        geçmişin izlerini taşırken, kafeler ve restoranlar modern yaşamla tarihi dokuyu bir araya getirir. 
+        Roma, sadece bir şehir gezisi değil, aynı zamanda tarih, sanat ve kültürü deneyimleyebileceğiniz bir açık hava müzesi gibidir. 
+        Ziyaretçiler, her adımda hem tarihî hem de güncel yaşamın iç içe geçtiği eşsiz bir atmosferi hisseder.</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="italyatur2.jpg">
-    <p>Venedik, kanalları ve gondollarıyla eşsiz bir turizm deneyimi sunar.</p>
+    <p>Venedik, kanalları ve gondollarıyla eşsiz bir turizm deneyimi sunar.
+        Venedik, kanalları, tarihi köprüleri ve ikonik gondollarıyla eşsiz bir turizm deneyimi sunar.
+         Şehir, su yolları üzerinde kurulu yapısıyla diğer şehirlerden tamamen farklı bir atmosfer yaratır.
+          Gondol turları, dar kanallarda romantik ve sessiz bir yolculuk imkânı verirken,
+           San Marco Meydanı, Dükler Sarayı ve Rialto Köprüsü gibi tarihi noktalar, şehrin tarihî ve kültürel zenginliğini gözler
+            önüne serer. Venedik’te yürüyüşler, kafelerde dinlenmeler ve yerel lezzetleri tatmak, 
+        ziyaretçilere hem tarih hem de günlük yaşamın iç içe geçtiği unutulmaz bir deneyim sunar.</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="italyatur3.jpg">
-    <p>Milano, moda ve alışveriş turizmi açısından önemlidir.</p>
+    <p>Milano, moda ve alışveriş turizmi açısından önemlidir.Venedik, kanalları, 
+        tarihi köprüleri ve ikonik gondollarıyla eşsiz bir turizm deneyimi sunar. 
+        Şehir, su yolları üzerinde kurulu yapısıyla diğer şehirlerden tamamen farklı bir atmosfer yaratır. 
+        Gondol turları, dar kanallarda romantik ve sessiz bir yolculuk imkânı verirken, San Marco Meydanı, 
+        Dükler Sarayı ve Rialto Köprüsü gibi tarihi noktalar, şehrin tarihî ve kültürel zenginliğini gözler önüne serer.
+         Venedik’te yürüyüşler, kafelerde dinlenmeler ve yerel lezzetleri tatmak,
+         ziyaretçilere hem tarih hem de günlük yaşamın iç içe geçtiği unutulmaz bir deneyim sunar.</p>
   </div>
 
 </section>

@@ -3,7 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>İtalya Mimari</title>
+<title>İtalya Mimari</title> <style>
+
+/* GENEL AYAR */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#111;
+    padding:15px 0;
+}
+
+.navbar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#f39c12;
+}
+
+/* SAYFA ALANI */
+.section{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* KART TASARIMI */
+.detay{
+    background:white;
+    width:70%;
+    margin:25px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.detay:hover{
+    transform:scale(1.02);
+}
+
+/* FOTOĞRAF */
+.detay-foto{
+    width:100%;
+    max-width:700px;
+    border-radius:10px;
+}
+
+/* YAZI */
+.detay p{
+    font-size:18px;
+    margin-top:15px;
+    color:#333;
+}
+
+/* MOBİL UYUMLU */
+@media(max-width:768px){
+    .detay{
+        width:90%;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+</style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,17 +109,36 @@
 
   <div class="detay">
     <img class="detay-foto" src="italyamimari1.jpg">
-    <p>Kolezyum, Roma döneminin en etkileyici yapılarından biridir.</p>
+    <p>Kolezyum, Roma döneminin en etkileyici yapılarından biridir.Kolezyum, Roma döneminin en etkileyici 
+        ve ikonik yapılarından biridir. M.Ö. 70–80 yılları arasında inşa edilen bu dev amfitiyatro, gladyatör dövüşleri
+         ve halka açık gösteriler için kullanılmıştır. Taş işçiliği, kemerler ve geniş oturma alanları, antik Roma mühendisliğinin 
+         ve mimarisinin büyüklüğünü gözler önüne serer. Ziyaretçiler, yapının iç mekanını ve alt 
+          keşfederek tarih boyunca yaşamış insanları ve dönemin sosyal yapısını daha yakından hissedebilir.
+           Kolezyum, sadece bir turistik simge değil, aynı zamanda
+         Roma İmparatorluğu’nun kültürel ve toplumsal mirasının canlı bir göstergesidir.</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="italyamimari2.jpg">
-    <p>Pisa Kulesi eğik yapısıyla dünyanın en ünlü yapılarındandır.</p>
+    <p>Pisa Kulesi eğik yapısıyla dünyanın en ünlü yapılarındandır.Pisa Kulesi, eğik yapısıyla dünyanın en ünlü yapılarından 
+        biridir ve mimarideki sıra dışı özelliğiyle ziyaretçileri büyüler. 12. yüzyılda inşa edilen kule, zemin yapısındaki 
+        yumuşak toprak nedeniyle eğilmeye başlamış ve zamanla bu eğiklik onun simgesi hâline gelmiştir. Beyaz mermerden yapılan
+         kule, çevresindeki katedral ve vaftizhane ile birlikte Pisa Meydanı’nda görkemli bir kompleks oluşturur.
+          Ziyaretçiler, kuleye çıkarak hem şehri panoramik olarak görebilir hem de bu tarihi yapının mimari detaylarını yakından
+           inceleyebilir.
+         Pisa Kulesi, sadece mimari bir merak unsuru değil, aynı zamanda tarih ve mühendisliğin ilginç bir birleşimini sunar.</p>
   </div>
 
   <div class="detay">
     <img class="detay-foto" src="italyamimari3.jpg">
-    <p>Vatikan’daki yapılar dini mimarinin zirvesini temsil eder.</p>
+    <p>Vatikan’daki yapılar dini mimarinin zirvesini temsil ederVatikan’daki yapılar, dini mimarinin 
+        ve sanatın zirvesini temsil eder. Aziz Petrus Bazilikası’nın ihtişamlı kubbesi, 
+        Michelangelo’nun eserleri ve Rönesans dönemi freskleri, hem dini hem de sanatsal 
+        açıdan büyüleyici bir deneyim sunar. Sistine Şapeli’nin tavanındaki detaylı resimler,
+         ziyaretçilere sanat ve inancın nasıl birleştiğini gösterir. Vatikan Müzeleri ise farklı dönemlerin
+          sanat ve kültür mirasını bir araya getirerek hem tarih hem de estetik açıdan zengin bir keşif olanağı sunar.
+           Bu yapılar, 
+        sadece ibadet alanları değil, aynı zamanda kültürel ve tarihî birer başyapıt olarak ziyaretçilerini etkiler..</p>
   </div>
 
 </section>
