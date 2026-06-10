@@ -1,0 +1,162 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* SAYFA */
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+/* 🎬 ARKA PLAN VİDEOLAR */
+.bg-videos{
+    position:fixed;
+    inset:0;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    z-index:-2;
+}
+
+.bg-videos video{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+    display:block;
+    filter:brightness(0.45) blur(1px);
+}
+
+/* 🌫 OVERLAY */
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.4);
+    z-index:-1;
+}
+
+/* 🔐 LOGIN KUTUSU */
+.login-box{
+    width:360px;
+    padding:35px;
+
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+
+    border-radius:16px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+
+    color:#fff;
+    text-align:center;
+
+    animation:fadeIn 0.6s ease;
+}
+
+/* BAŞLIK */
+.login-box h2{
+    margin-bottom:20px;
+    font-size:24px;
+    letter-spacing:1px;
+}
+
+/* INPUTLAR */
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+
+    border:none;
+    outline:none;
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.15);
+    color:#fff;
+
+    transition:0.3s;
+}
+
+.login-box input:focus{
+    background:rgba(255,255,255,0.25);
+}
+
+/* PLACEHOLDER */
+.login-box input::placeholder{
+    color:#ddd;
+}
+
+/* BUTON */
+.login-box button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+
+    border:none;
+    border-radius:10px;
+
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+    color:#fff;
+    font-weight:bold;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-box button:hover{
+    transform:scale(1.03);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ❌ HATA */
+.error{
+    background:#ff4d4d;
+    padding:8px;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+/* 🔑 ŞİFRE ALANI */
+.password-box{
+    position:relative;
+}
+
+.password-box input{
+    padding-right:40px;
+}
+
+/* 👁 GÖZ */
+.eye{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+
+    cursor:pointer;
+    user-select:none;
+    font-size:18px;
+    color:#fff;
+    opacity:0.8;
+    transition:0.2s;
+}
+
+.eye:hover{
+    opacity:1;
+}
+
+/* ✨ ANİMASYON */
+@keyframes fadeIn{
+    from{
+        transform:translateY(20px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
